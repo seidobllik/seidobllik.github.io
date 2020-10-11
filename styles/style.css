@@ -270,6 +270,16 @@ footer {
   color: #EDF6F9;
 }
 
-@media (max-width: 920px) {
+@media only screen and (max-width: 980px) {
+  #navbar li, #name {
+    font-size: 3rem;
+  }
+
+  #contact-form {
+    width: 80%;
+  }
   
+  #contact-form * {
+    font-size: 2.5rem;
+  }
 }
