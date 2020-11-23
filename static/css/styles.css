@@ -41,6 +41,9 @@ html {
 
 #intro-section .card {
   background: rgba(255, 255, 255, 0.3);
+  position: absolute;
+  top: 30%;
+  width: 100%;
 }
 
 #intro-btn {
@@ -58,6 +61,12 @@ html {
   color: var(--primary-text);
 }
 
+@media only screen and (max-width: 500px) {
+  #intro-section h2 {
+    font-size: 300%;
+  }
+}
+
 #navbar .nav-pills .active {
   transition: box-shadow 0.35s linear 0s;
   color: white;
@@ -70,7 +79,7 @@ html {
 }
 
 #about-section .card {
-  margin: 0.5rem;
+  margin: 1rem 0.5rem;
   box-shadow: 0 0 0.5rem black;
   background: var(--card-background);
 }
