@@ -1,0 +1,131 @@
+:root {
+  --background-color-light: rgb(250, 250, 250);
+  --background-color-dark: rgb(190, 190, 190);
+  --primary-text: rgb(50, 50, 50);
+  --card-background: #343a4069;
+}
+
+.text-color-primary {
+  color: var(--primary-text);
+}
+
+.section-header {
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid var(--primary-text);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#intro-section,
+#about-section,
+#projects-section,
+#contact-section {
+  text-align: center;
+  width: 100%;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+#intro-section {
+  height: 100vh;
+  background: url("../media/background-image.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: var(--background-color-dark);
+}
+
+#intro-section .card {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+#intro-btn {
+  display: inline-block;
+  font-size: 2rem;
+  padding: 0 1rem;
+  border: 0.3rem solid;
+  border-radius: 50%;
+}
+
+#intro-btn:hover {
+  transition: all 0.35s linear 0s;
+  transform: scale(1.2);
+  background-color: rgba(50, 50, 50, 0.5);
+  color: var(--primary-text);
+}
+
+#navbar .nav-pills .active {
+  transition: box-shadow 0.35s linear 0s;
+  color: white;
+  background: none;
+  box-shadow: 0 1px white, 0 -1px white;
+}
+
+#about-section {
+  background: var(--background-color-light);
+}
+
+#about-section .card {
+  margin: 0.5rem;
+  box-shadow: 0 0 0.5rem black;
+  background: var(--card-background);
+}
+
+#about-section #portrait {
+  margin: 1rem 0 1rem 0;
+  box-shadow: 0 0 0.5rem black;
+  border-radius: 5px;
+}
+
+#about-section .languages {
+  font-weight: bold;
+}
+
+#projects-section {
+  background: var(--background-color-dark);
+}
+
+#projects-section .carousel-inner {
+  box-shadow: 0 0 0.5rem black;
+}
+
+#projects-section .carousel-caption {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+#contact-section {
+  background: var(--background-color-light);
+}
+
+#contact-section .card {
+  padding: 0;
+  box-shadow: 0 0 0.5rem black;
+  background: var(--card-background);
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  padding: 0.5rem 0.5rem 0.5rem 0;
+  width: 100%;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+footer .social-media-link {
+  background: white;
+  font-size: 3rem;
+  padding: 0.2rem;
+  margin: 0.4rem;
+  width: 5rem;
+  border-radius: 0.5rem;
+}
+
+footer p {
+  margin: 0;
+  padding: 0;
+}
