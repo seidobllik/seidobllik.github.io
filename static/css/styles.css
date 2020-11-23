@@ -93,6 +93,10 @@ html {
   box-shadow: 0 0 0.5rem black;
 }
 
+#projects-section img {
+  margin: 0 auto;
+}
+
 #projects-section .carousel-caption {
   background: rgba(0, 0, 0, 0.7);
 }
